@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type=text/css href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="Login">
+        <h1><i class="fa fa-user-circle"></i>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" id="user">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" id="pass">
+            <input type="submit" name="" value="Login" class="submit-btn" onclick="auth();"><br>
+            <a href="#">Forgot Your Password</a><br>
+            <a href="#">Create New Account</a>
+        </form>
+        <script>
+            function auth(){
+                var Username= document.getElementById('user').value;
+                var Password= document.getElementById('pass').value;
+                    if (Username=="Abdo123" || Password=="abdo123"){
+                        alert("Login Successful");
+                        window.open("client.html");
+                        }
+                    else if(Username=="" || Password==""){
+                        alert("please enter your credentials");
+                        return;
+                    }
+                    else{
+                        alert("Invalid Credentials");
+                        return;
+                    }
+            }
+         </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reportform">
+        <h1>Report A Problem</h1>
+        <form name="form1" id="form1" action="/action_page.php">
+            Category: <select name="subject" id="subject">
+              <option value="" selected="selected">Transfers</option>
+              <option value="" selected="selected">Bills And Payments</option>
+              <option value="" selected="selected">Technical Issue</option>
+              <option value="" selected="selected">Loans</option>
+              <option value="" selected="selected">Credit Card Points</option>
+            </select>
+        </form>    
+        <p>Write Your Description:</p>
+        <textarea class="desc" placeholder="Description"></textarea>
+        <button type="button" onclick="submit();">Submit Report</button>
+    </div>
+<script>
+    function submit(){
+        alert("Report Submitted")
+    }
+</script>
+    
+</body>
+</html>

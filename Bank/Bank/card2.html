@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bank</title>
+</head>
+<body>
+  <div class="card-container2">
+    <div class="card-info2">
+      <h3>Card Information</h3>
+      <p id="num">2512 5180 7924 5826</p>
+      <p id="name">Abdullah Mahgoub</p>
+      <p>Expiration Date: 01/22</p>
+      <p>CVV: 684</p>
+    </div>
+    <div class="transaction-box2">
+      <h3>Transaction History</h3>
+
+      <p>Transaction 1 - $10.00</p>
+      <p>Transaction 2 - $15.00</p>
+      <p>Transaction 3 - $20.00</p>
+ 
+    </div>
+    <div class="card-buttons2">
+      <div class="button-row2">
+        <button class="redeem-points-button" onclick="confirmRedeem()">Redeem Points</button>
+                <a href="report.html" class="report-issue-button">Report Issue</a>
+          </div>
+      <div class="pay-button2">
+        <input type="text" placeholder="Amount" id="amount2">
+        <button class="pay-button" onclick="confirmPayment()">Pay</button>      </div>
+    </div>
+  </div>
+
+  <script>
+    function confirmRedeem() {
+      if (confirm("POINTS REDEEMED")) {
+        // If the user clicks "OK" in the confirmation dialog, redirect to the redemption page
+        window.location.href = "card2.html";
+      }
+    }
+    function confirmPayment() {
+  var amount = document.getElementById("amount2").value;
+  if (amount.trim() === "") {
+    alert("Please enter a payment amount.");
+    return;
+  }
+  if (confirm("Payment Confirmed")) {
+    // If the user clicks "OK" in the confirmation dialog, submit the payment form
+    window.location.href = "card2.html";
+  }
+}
+    </script>
+</body>
+</html>
