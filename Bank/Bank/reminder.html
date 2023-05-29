@@ -17,7 +17,8 @@
                 <p style="display: inline;">Destination:  </p><p id="info" style="display: inline;">Vodafone</p><br>
                 <p style="display: inline;">Deadline:  </p><p id="info" style="display: inline;">30/1/22</p><br>
                 <p style="display: inline;">Status:  </p><p id="info" style="display: inline;">paid</p><br>
-                <button type="button">Pay</button><button type="button">Set Reminder</button>
+                <p style="display: inline;">Account Associated:  </p><p id="info" style="display: inline;">100049572830</p><br>
+                <button type="button" onclick="pay();">Pay</button><button type="button" onclick="set();">Set Reminder</button>
             </div>
             <div class="bill2">
                 <p style="display: inline;">Amount:  </p><p id="info" style="display: inline;">5200.71EGP</p><br>
@@ -25,7 +26,8 @@
                 <p style="display: inline;">Destination:  </p><p id="info" style="display: inline;">Egy Electric</p><br>
                 <p style="display: inline;">Deadline:  </p><p id="info" style="display: inline;">30/4/22</p><br>
                 <p style="display: inline;">Status:  </p><p id="info" style="display: inline;">pending</p><br>
-                <button type="button">Pay</button><button type="button">Set Reminder</button>
+                <p style="display: inline;">Account Associated:  </p><p id="info" style="display: inline;">100049572830</p><br>
+                <button type="button" onclick="pay();">Pay</button><button type="button" onclick="set();">Set Reminder</button>
             </div>
             <div class="bill3">
                 <p style="display: inline;">Amount:  </p><p id="info" style="display: inline;">15,700.49</p><br>
@@ -33,7 +35,8 @@
                 <p style="display: inline;">Destination:  </p><p id="info" style="display: inline;">GUC Bank</p><br>
                 <p style="display: inline;">Deadline:  </p><p id="info" style="display: inline;">31/3/22</p><br>
                 <p style="display: inline;">Status:  </p><p id="info" style="display: inline;">paid</p><br>
-                <button type="button">Pay</button><button type="button">Set Reminder</button>
+                <p style="display: inline;">Account Associated:  </p><p id="info" style="display: inline;">100049572830</p><br>
+                <button type="button" onclick="pay();">Pay</button><button type="button" onclick="set();">Set Reminder</button>
             </div>
             <div class="bill4">
                 <p style="display: inline;">Amount:  </p><p id="info" style="display: inline;">20,000.00EGP</p><br>
@@ -41,10 +44,19 @@
                 <p style="display: inline;">Destination:  </p><p id="info" style="display: inline;">GUC Bank</p><br>
                 <p style="display: inline;">Deadline:  </p><p id="info" style="display: inline;">30/4/22</p><br>
                 <p style="display: inline;">Status:  </p><p id="info" style="display: inline;">pending</p><br>
-                <button type="button">Pay</button><button type="button">Set Reminder</button>
+                <p style="display: inline;">Account Associated:  </p><p id="info" style="display: inline;">100049572830</p><br>
+                <button type="button" onclick="pay();">Pay</button><button type="button" onclick="set();">Set Reminder</button>
             </div>
         </div>
     </div>
+    <script>
+        function pay(){
+            alert("Bill was deducted from associated account")
+        }
+        function set(){
+            alert("A reminder has been set 3 days prior to deadline")
+        }
+    </script>
     
 </body>
 </html>
