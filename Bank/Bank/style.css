@@ -9,7 +9,7 @@ body{
 }
 .Login{
     width: 288px;
-    height: 370px;
+    height: 400px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -868,7 +868,74 @@ body {
     }
   }
 
+  .reminder{
+    width: 100%;
+  }
+
+  .bill1{
+    background-color: orange;
+    margin-left: 10%;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .bill{
+    margin-bottom: 100px;
+  }
+
+  .bill button{
+    float: right;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .bill button:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .bill2{
+    background-color: orange;
+    width: 40%;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .bill3{
+    background-color: orange;
+    width: 40%;
+    margin-left: 10%;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+
+  .bill4{
+    background-color: orange;
+    width: 40%;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+
+  .bill p{
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .bill p[id="info"]{
+    color: white;
+    font-weight: lighter;
+    font-size: 17px;
+  }
 
 
-
-  
