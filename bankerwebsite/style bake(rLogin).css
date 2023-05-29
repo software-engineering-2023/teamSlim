@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg') repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    height: 120px;
+}
+
+.navigation h2{
+margin-left: 540px;
+font-size: 3em;
+}
+
+ .picture .sora{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    top: 0;
+    margin-left: -1360px;
+    z-index: 1000;
+} 
+
+.grid-container {
+    display: grid;
+    display :inline-block ;
+    row-gap: -15px;
+    border-radius:7px;
+    border: 2cm;
+    display: grid;
+    grid-column: 1;
+    
+    
+
+  }
+  .grid-container .grid-item .btn{
+    width: 1550px;
+    height: 100px;
+    z-index: 2000;
+    cursor: pointer;
+    font-size: 2em;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    color: black;
+    transition: .5s;
+    font-weight: 600;
+  }
+  .grid-container .grid-item .btn:hover{
+    background: black;
+    color: white;
+  }
+  .grid-container .grid-item .btn1{
+    width: 1550px;
+    height: 100px;
+    z-index: 2000;
+    cursor: pointer;
+    font-size: 2em;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    color: black;
+    transition: .5s;
+    margin-top: 80px;
+    font-weight: 600;
+  }
+  .grid-container .grid-item .btn1:hover{
+    background: black;
+    color: white;
+  }
+  
