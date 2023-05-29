@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="accs">
+        <h1 style="margin-top: 5%;">My Accounts</h1>
+    </div>
+    <a href="client.html" style="color: orange; margin-left: 5%; text-decoration: none;"><b>Home</b> </a>
+    <div class="account1">
+        <h2>Account 1</h2>
+        <p>Account Number:</p>
+        <p id="details">100049572830</p>
+        <p>Balance:</p>
+        <p id="details">10,324,564EGP</p>
+        <p>Account Type:</p>
+        <p id="details">Current</p>
+        <p>Date Of Creation:</p>
+        <p id="details">23/4/2019</p>
+        <button type="button" style="margin-bottom: 1%;" onclick="closeAcc();">Close Account</button><br>
+        <button type="button" style="margin-bottom: 1%;" onclick="transaction();">Transactions</button><br>
+        <button type="button" onclick="transfer();">Transfers</button>
+    </div>
+    <div class="account2">
+        <h3>Account 2</h3>
+        <p>Account Number:</p>
+        <p id="details">1000385920476</p>
+        <p>Balance:</p>
+        <p id="details">1,350,738EGP</p>
+        <p>Account Type:</p>
+        <p id="details">Saving</p>
+        <p>Date Of Creation:</p>
+        <p id="details">1/1/2008</p>
+        <button type="button" style="margin-bottom: 1%;" onclick="closeAcc();">Close Account</button><br>
+        <button type="button" style="margin-bottom: 1%;" onclick="transaction();">Transactions</button><br>
+        <button type="button" onclick="transfer();">Transfers</button>
+    </div>
+    <div class="newacc">
+        <div style="font-size: 25px; color: orange; margin-left: 30%; margin-top: 5%; margin-bottom: 2%;"><b>Add New Account</b></div>
+        <button style="margin-top: auto; margin-bottom: 2%;" onclick="openAcc();">Savings</button><br>
+        <button style="margin-top: auto;" onclick="openAcc();">Current</button>
+    </div>
+   
+    <script>
+        function closeAcc() {
+                
+                        alert("Account is now closed, please visit our bank to recieve any reamining money in your account");
+                    
+                    } 
+        function openAcc() {
+                
+                alert("New account opened");
+            
+            }
+            function transfer() {
+                
+                window.close();
+                window.open("transfer.html");
+            
+            } 
+            function transaction() {
+                
+                window.close();
+                window.open("transactions.html");
+            
+            }         
+        
+    </script>
+</body>
+</html>

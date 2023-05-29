@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUC Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Login">
+        <h1><i class="fa fa-user-circle"></i>Register</h1>
+            <form>
+                <p>Name</p>
+                <input type="text" name="" placeholder="Enter Name" required id="name">
+                <p>National-ID</p>
+                <input type="text" name="" placeholder="Enter National-ID" required id="national-ID">
+                <p>Phone Number</p>
+                <input type="text" name="" placeholder="Enter Phone Number" required id="phone-number">
+                <p>Email</p>
+                <input type="email" name="" placeholder="Enter Email" required id="email">
+                <p>Birth-date</p>
+                <input type="date" name="" placeholder="Enter Birth-date" required id="birth-date">
+                <p>Address</p>
+                <input type="text" name="" placeholder="Enter your address" required id="address">
+                <p>Username</p>
+                <input type="text" name="" placeholder="Enter Username" required id="user">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Enter Password" style="color: gray;" required id="pass">
+                <input type="submit" name="" style="background-color: orange;" value="Register" class="submit-btn" onclick="register();" ><br>
+                <a href="index.html">Login</a>
+            </form>
+    </div>    
+    <script>
+        function register(){
+                var Username= document.getElementById('user').value;
+                var Password= document.getElementById('pass').value;
+                var name= document.getElementById('name').value;
+                var id= document.getElementById('national-ID').value;
+                var phone= document.getElementById('phone-number').value;
+                var email= document.getElementById('email').value;
+                var bdate= document.getElementById('birth-date').value;
+                var address= document.getElementById('address').value;
+                 
+                if(!(Username=="" || Password=="" || name=="" || id==""||phone=="" || email==""
+                    || bdate=="" || address=="")){
+                    
+                        alert("Registered Successfully");
+                        window.close();
+                        window.open("index.html");
+                        return;
+                    }
+            }
+    </script>
+</body>
+</html>

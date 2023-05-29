@@ -1,0 +1,1128 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.reminder{
+    width: 100%;
+  }
+
+  .bill1{
+    background-color: orange;
+    margin-left: 10%;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .bill{
+    margin-bottom: 100px;
+  }
+
+  .bill button{
+    float: right;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .bill button:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .bill2{
+    background-color: orange;
+    width: 40%;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .bill3{
+    background-color: orange;
+    width: 40%;
+    margin-left: 10%;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+
+  .bill4{
+    background-color: orange;
+    width: 40%;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  .adm{
+    margin-top: 10%;
+    float: left;
+    width: 100%;
+  }
+
+  .adm h1{
+    float: left;
+    margin-left: 2%;
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  .adm h2{
+    float: left;
+    margin-left: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  .adm h3{
+    float: left;
+    margin-left: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  .adm h4{
+    float: left;
+    margin-left: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+
+  .navigation a {
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: orange;
+}
+
+.navigation a:hover {
+  color: white;
+}
+
+.adm table{
+  background-color: white;
+  width: 80%;
+  color: #000;
+  text-align: center;
+  margin-top: 25%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.adm table th{
+  background-color: orange;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.adm table td button{
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.adm table td button:hover{
+  background-color: black;
+  color: white;
+}
+  .Notifi-container {
+    width: 40%;
+    background-color: orange ;
+    padding: 20px;
+    margin: 10px auto;
+    font-family: 'Permanent Marker', cursive;
+    color:black;
+  }
+
+  .bill p{
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .bill p[id="info"]{
+    color: white;
+    font-weight: lighter;
+    font-size: 17px;
+  }
+
+.card-button {
+    margin-bottom: 16px;
+}
+
+.apply-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.apply-button {
+    display: block;
+    padding: 16px 32px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-left: 60px;
+    width: 20%;
+    max-width: 250px;
+}
+
+.apply-button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+/* Set default font and margin */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style for the card container */
+  .card-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the card information */
+  .card-info {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .card-info h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .card-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Style for the transaction box */
+  .transaction-box {
+    margin-bottom: 20px;
+  }
+  
+  .transaction-box h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .transaction-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .transaction-box li {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .card-info h3,
+.transaction-box h3,
+.card-info p,
+.transaction-box p {
+  color: black;
+}
+
+.card-info2 h3,
+.transaction-box2 h3,
+.card-info2 p,
+.transaction-box2 p {
+  color: black;
+}
+  /* Style for the card buttons */
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .card-buttons button {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .card-buttons button:hover {
+    background-color: #FFA800;
+  }
+
+
+  
+  .pay-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .pay-button input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .pay-button button {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 25px;
+  }
+
+
+
+
+  
+/* Set default font and margin */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Style for the card container */
+  .card-container2 {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the card information */
+  .card-info2 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .card-info2 h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .card-info2 p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Style for the transaction box */
+  .transaction-box2 {
+    margin-bottom: 20px;
+  }
+  
+  .transaction-box2 h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .transaction-box2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .transaction-box2 li {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Style for the card buttons */
+  .card-buttons2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .card-buttons2 button {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .card-buttons2 button:hover {
+    background-color: #FFA800;
+  }
+  
+  .pay-button2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pay-button2 input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .pay-button2 button {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+  }
+  
+  .pay-button2 button:hover{
+    background-color: #FFA800;
+  }
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solidwhite;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  select option[disabled] {
+    color: #999;
+  }
+  
+  button[type="submit"] {
+    background-color: #FFA500;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #FFA800;
+  }
+  
+  input:invalid {
+    border: 1px solid red;
+  }
+  
+  input:valid {
+    border: 1px solid white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    form {
+      margin: 0 10px;
+    }
+  }
+.accs{
+    color: orange;
+    font-size: 50px;
+}
+
+.account1{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+    background-color: orange;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+.account1 h2{
+    color: #000;
+    margin-left: 33%;
+}
+
+.account2{
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+    background-color: orange;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+.account2 h3{
+    color: #000;
+    margin-left: 37%;
+}
+
+.account1 button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.account1 button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.account2 button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.account2 button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.newacc button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px; 
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-left: 42%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.newacc button:hover{
+    background-color: orange;
+}
+
+.account1 p{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.account1 p[id="details"]{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.account2 p{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.account2 p[id="details"]{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,  rgba(0,0,0,0.5)50%), url(bank.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    font-family: sans-serif;
+}
+.Login{
+    width: auto;
+    height:auto;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px 25px;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Login h1{
+    background-color: orange;
+    border-radius: 6px;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.Login input{
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+
+.Login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    height: 20px;
+    font-size: 16px;
+}
+
+.Login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    background: #000;
+    font-size: 17px;
+    border-radius: 20px;   
+}
+
+.Login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.Login a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: orange;
+}
+
+.Login a:hover{
+    color: #fff;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color:orange;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 1000px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: orange;
+}
+
+.Details{
+    width: 288px;
+    height: 270px;
+    background: rgb(235, 131, 11);
+    color: #000;
+    box-sizing: content-box;
+    padding: 40px 50px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    border-color: #000;
+    border-width: 15px;
+}
+
+.Details p{
+    color: black;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.Details p[id="accname"]{
+    color: #fff;
+    font-size: 16px;
+}
+
+.Details p[id="numcard"]{
+    color: #fff;
+    font-size: 16px;
+}
+
+.Details p[id="balance"]{
+    color: #fff;
+    font-size: 16px;
+}
+
+.Details p[id="datecr"]{
+    color: #fff;
+    font-size: 16px;
+}
+
+.Details p[id="accnum"]{
+    color: #fff;
+    font-size: 16px;
+}
+
+.Details p:hover{
+    color: antiquewhite;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color:orange;
+    font-size: 30px;
+}
+
+.Replacement{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    color:orange;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.Replacement input{
+    width: 20%;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    margin-left: 50px;
+    border: 2px solid orange;
+}
+
+.Replacement input[type="text"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    color: black;
+    background: white;
+    font-size: 17px;
+    border-radius: 20px; 
+    padding-left: 30px;
+    width: max-content;
+}
+
+.New button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px; 
+    font-size: 20px;
+    margin-left: 60px;
+    cursor: pointer;
+    text-align: center;
+    padding: 14px, 40px;
+    border: 2px solid orange;
+    width: 50%;
+}
+
+.New{
+    top: 20%;
+    left: 49%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.New button:hover{
+    background-color: orange;
+}
+
+.Replacement button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px; 
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid orange;
+}
+
+.Replacement button:hover{
+    background-color: orange;
+}
+
+.apply h5{
+    font-family: 'Times New Roman', Times, serif;
+    color:orange;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+
+.transaction h1{
+    color: orange;
+    font-size: 25px;
+    padding-top: 4.5%;
+}
+
+.transaction table{
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 12px 5px orange;
+    border-radius: 12px 12px 12px 12px;
+    overflow: hidden;
+}
+
+.transaction tr,td{
+    padding-bottom: 50%;
+    padding: 10px;
+}
+
+.transaction td{
+    background-color: #fff;
+}
+
+.transaction th{
+    background-color: orange;
+    font-size: 15px;
+    text-align: center;
+}
+
+.perform{
+    background: orange;
+    position: absolute;
+    justify-content: center;
+    top: 70%;
+    left: 35%;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    color: black;
+    width: 270px;
+    height: 300px;
+    }
+
+.perform input{
+    margin-top: 30px;
+    color: #000;
+}
+
+
+.transaction button{
+    margin-left: 41%;
+    margin-top: 20%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 2px solid orange;
+    font-size: 20px;
+}
+
+.transaction button:hover{
+    background-color: orange;
+}
+
+.perform input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    font-size: 18px;
+    color: #000;
+}
+
+.perform input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    background: #000;
+    font-size: 17px;
+    border-radius: 20px; 
+    cursor: pointer;  
+    width: 100px;
+    font-weight: bold;
+}
+
+.perform input[type="submit"]:hover{
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+}
+
+.card1 {
+    background: orange;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.card1 h1{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.card1 p[id="name"]{
+    float: right;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+.card1 p[id="num"]{
+    text-align: center;
+    padding-top: 110px;
+}
+
+
+.card2 {
+    background: greenyellow;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 50px;
+    color: black;
+}
+
+.card2 h1{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.card2 p[id="name"]{
+    float: right;
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+.card2 p[id="num"]{
+    text-align: center;
+    padding-top: 110px;
+}
+
+.loans h1{
+    color: orange;
+    font-size: 25px;
+    padding-top: 4.5%;
+}
+
+.loans table{
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+    border-radius: 12px 12px 12px 12px;
+    overflow: hidden;
+}
+
+.loans tr,td{
+    padding-bottom: 50%;
+    padding: 10px;
+}
+
+.loans td{
+    background-color: #fff;
+}
+
+.loans th{
+    background-color: orange;
+    font-size: 15px;
+    text-align: center;
+}
+
+.loans button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px; 
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-left: 42%;
+    margin-top: 15%;
+}
+
+.loans button:hover{
+    background-color: orange;
+}
+
+.reportform{
+    font-size: 26px;
+    color: orange;
+    margin-left: 30px;
+}
+
+.reportform button{
+    color: black;
+    background-color: #fff;
+    border-radius: 10px; 
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid orange;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.reportform button:hover{
+    background-color: orange;
+}
+
+.reportform textarea{
+    font-size: large;
+    height: 300px;
+    width: 300px;
+    text-align: left;
+}

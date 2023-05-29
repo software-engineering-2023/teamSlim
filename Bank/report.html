@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUC Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <br>
+    <a href="client.html" style="color: orange; margin-left: 5%; text-decoration: none;"><b>Home</b> </a>
+    <div class="reportform">
+        <h1>Report A Problem With The System</h1>
+        <br> 
+        <p style="font-size: smaller; margin-left: 40%;">Description:</p>
+        <textarea style="margin-left: 40%;" class="desc" placeholder="write here"  id="textarea"></textarea><br><br>
+        <button style="margin-left: 48%;" type="button" onclick="submit();">Submit</button>
+    </div>
+<script>
+    function submit(){
+        var x = document.getElementById("textarea").value;
+         
+         if(x==""){
+                      alert("please enter the description") ;
+                      return;
+                    }
+                    else{
+                        alert("report submitted");
+                       return;
+                        
+                    }
+    }
+</script>
+    
+</body>
+</html>

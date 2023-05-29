@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Welcome</title>
+    <title>GUC Bank</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type=text/css href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
@@ -9,31 +9,36 @@
 </head>
 <body>
     <div class="Login">
-        <h1><i class="fa fa-user-circle"></i>Login Here</h1>
+        <h1><i class="fa fa-user-circle"></i>Login</h1>
         <form>
             <p>Username</p>
             <input type="text" name="" placeholder="Enter Username" id="user">
             <p>Password</p>
-            <input type="password" name="" placeholder="Enter Password" id="pass">
-            <input type="submit" name="" value="Login" class="submit-btn" onclick="auth();"><br>
-            <a href="#">Forgot Your Password</a><br>
-            <a href="#">Create New Account</a>
+            <input type="password" name="" placeholder="Enter Password" id="pass" style="color: gray;">
+            <input type="submit" name="" style="background-color: orange;" value="Login" class="submit-btn" onclick="auth();"><br>
+            <a href="register.html">Create New Account</a>
         </form>
         <script>
             function auth(){
                 var Username= document.getElementById('user').value;
                 var Password= document.getElementById('pass').value;
-                    if (Username=="Abdo123" || Password=="abdo123"){
-                        alert("Login Successful");
-                        window.open("client.html");
-                        }
-                    else if(Username=="" || Password==""){
+                    if(Username=="" || Password==""){
                         alert("please enter your credentials");
                         return;
                     }
+                    else if(Username=="banker"){
+                        window.close();
+                        window.open("banke(rLogin).html");
+                    }
+                    else if(Username=="admin"){
+                        window.close();
+                        window.open("admin.html");
+                    }
                     else{
-                        alert("Invalid Credentials");
-                        return;
+                       
+                        window.close();
+                        window.open("client.html");
+                        
                     }
             }
          </script>

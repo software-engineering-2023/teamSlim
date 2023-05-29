@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Client</title>
+    <title>GUC Bank</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a href="index.html" style="color: orange; text-decoration: none; float: right; margin-top: 1%; margin-right: 1%;"><b>Log out</b> </a>
     <div class="MainMenu">
         <div class="navbar">
             <div class="icon">
-                 <h2 class="logo">Welcome To Your Account</h2>
+                 <h1 class="logo" style="color: orange; float: left; margin-left: 5%; margin-top: 1%;">ZIADA BANK</h1>
             </div>
+            
                 <div class="menu">
                     <ul>
-                        <li><a href="#" onclick="GoToNewCard();">New Card</a></li>
-                        <li><a href="#" onclick="GoToLoans();">Loans</a></li>
-                        <li><a href="#" onclick="GoToMyCards();">My Cards</a></li>
-                        <li><a href="#" onclick="GoToTransfers();">Transfers</a></li>
-                        <li><a href="#" onclick="GoToReminders();">Reminders</a></li>
+                        <li><a href="myaccounts.html">Accounts</a></li>
+                        <li><a href="loan.html" >Loans</a></li>
+                        <li><a href="bills.html" >Bills</a></li>
+                        <li><a href="#" onclick="GoToMyCards();">Credit Cards</a></li>
+                        <li><a href="Notification.html" >Notifications</a></li>
                         <li><a href="#" onclick="GoToReports();">Report An Issue</a></li> 
                     </ul>
                 </div>
 
                 <div class="Details">
-                    <p>Your Registered Name:</p>
+                    <p>Welcome</p>
                     <p id="accname" contenteditable="true">Abdullah Mohamed Mahgoub</p>
-                    <p>Number of Cards:</p>
-                    <p id="numcard" contenteditable="true">2</p>
-                    <p>Your Balance:</p>
+                    
+                    <p>Your Total Balance:</p>
                     <p id="balance" contenteditable="true">10,324,564EGP</p>
                     <p>Date Of Creation:</p>
                     <p id="datecr" contenteditable="true">23/4/2019</p>
-                    <p>Account Number:</p>
-                    <p id="accnum" contenteditable="true">100049572830</p>
+                   
 
                 </div>
+                
             </div>
     <script>
         function GoToNewCard(){
@@ -49,7 +50,7 @@
             window.open("transfer.html")
         }
         function GoToReminders(){
-            window.open("reminder.html")
+            window.open("Notifications.html")
         }
         function GoToReports(){
             window.open("report.html")

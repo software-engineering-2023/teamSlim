@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUC Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="transaction">
+        <br>
+    <a href="myaccounts.html" style="color: orange; margin-left: 5%; margin-top: 10%; text-decoration: none;"><b>My Accounts</b> </a>
+    
+    <div style="margin-top: 5%;" class="Login">
+        <h1 style="color: white;">Bank Transfer</h1>
+        <form>
+            <p>Type</p>
+            <select  id="1">
+                <option value="">internal</option>
+                <option value="">domestic</option>
+                <option value="">international</option>
+            </select>
+            <p>Destination Bank</p>
+            <input required type="text" name="" placeholder="Enter Bank Number" id="5" >
+            <p>Destination Account</p>
+            <input required type="text" name="" placeholder="Enter Account Number" id="2" >
+            <p>Amount</p>
+            <input required type="text" name="" placeholder="Enter Amount" id="3"><br>
+            <input type="submit" name="" style="background-color: orange;" value="Pay"  onclick="go();"><br>
+           
+        </form>
+        
+    </div>
+    </div>
+    <script>
+        function go() {
+         //var x = document.getElementById("1").value;
+         var y = document.getElementById("2").value;
+         var z = document.getElementById("3").value;
+         
+         if(y=="" || z==""){
+                      return ;
+                    }
+                    else{
+                        alert("Money Transfered Successfully");
+                       return;
+                        
+                    }
+        }
+    </script>
+</body>
+</html>

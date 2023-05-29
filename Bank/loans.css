@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bank.jpg') repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px
+}
+
+.navigation h2{
+margin-left: 540px;
+font-size: 3em;
+}
+
+table {
+  color: white;
+}
+ .picture .sora{
+    position: relative;
+    width: 115px;
+    height: 115px;
+    top: 0;
+    margin-left: -1360px;
+    z-index: 1000;
+} 
+table, th, td {
+    border: 1px solid white;
+
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  tr:hover{
+    background-color: gray;
+    transition: .5s;
+    color: white(225, 233, 236);
+    
+    
+  }
+
+  .button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
+    transition: .5s;
+  }
+
+th, td {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-style: inset;
+  }
+
+th {
+    color: rgb(255, 255, 255);
+    background: rgb(44, 44, 44);
+}
+
+  table{
+    width: 80%;
+    margin-top: 20px;
+    height: 500px;
+  }

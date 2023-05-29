@@ -8,26 +8,32 @@
   <title>Bank</title>
 </head>
 <body>
-  <div class="card-container">
+  <br>
+  <br>
+  <a href="mycard.html" style="color: orange; margin-left: 5%; text-decoration: none;"><b>My Cards</b> </a>
+  <div class="card-container" style="background-color: black; ">
     <div class="card-info">
-      <h3>Card Information</h3>
-      <p>Card Number: 2512 5180 9378 7542</p>
-      <p id="name">Abdullah Mahgoub</p>
-      <p>Expiration Date: 01/22</p>
-      <p>CVV: 684</p>
+      <h2 style="background-color: orange; color: white; padding: 2% 0% 2% 35% ;">Card Information</h2><br>
+      <p style="color:  white;">Card Number: 2512 5180 9378 7542</p>
+      <p style="color:  white;" id="name">Owner: Abdullah Mahgoub</p>
+      <p style="color:  white;">Expiration Date: 01/22</p>
+      <p style="color:  white;">Account Number: 235246357467462</p>
+      <p style="color:  white;">Points: 2845 pts => 150EGP</p>
+      <p style="color:  white;">Limit: 10000EGP</p>
+      <p style="color:  white;">Amount To pay (Bill): 3429EGP (deadline 24/6/2023)</p>
+      <p style="color:  white;">CVV: 684</p><br>
     </div>
     <div class="transaction-box">
-      <h3>Transaction History</h3>
-
-      <p>Transaction 1 - $10.00</p>
-      <p>Transaction 2 - $15.00</p>
-      <p>Transaction 3 - $20.00</p>
+      <h2 style="background-color: orange; color: white; padding: 2% 0% 2% 35% ;">Transaction History</h2><br>
+      <p style="color:  white;">Transaction 1 - 150EGP - Bakier Stationary - 11/1/2023</p>
+      <p style="color:  white;">Transaction 2 - 700EGP - Sizzler Restuarant - 24/2/2023</p>
+      <p style="color:  white;">Transaction 3 - 399EGP - Metro Supermarket - 17/4/2023</p>
  
     </div>
     <div class="card-buttons">
       <div class="button-row">
         <button class="redeem-points-button" onclick="confirmRedeem()">Redeem Points</button>
-                <a href="report.html" class="report-issue-button">Report Issue</a>
+                <a href="reportcard.html" class="report-issue-button" style="color: white;">Report Issue</a>
           </div>
           <div class="pay-button">
             <input type="text" placeholder="Amount" id="amount">
